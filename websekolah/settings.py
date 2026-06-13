@@ -26,8 +26,9 @@ SECRET_KEY = 'django-insecure-7cqseum1mghp)7g5fs-#fs0m&aas6#$q%d5v9snpk4urr5fr0q
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    '127.0.0.1',
     'muhammadirkhamfajri.pythonanywhere.com'
-    ]
+]
 
 
 # Application definition
@@ -75,14 +76,11 @@ WSGI_APPLICATION = 'websekolah.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'webprofile.juni-26',
-        'USER': 'dev',
-        'PASSWORD': 'irkhamfajri',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
